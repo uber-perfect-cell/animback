@@ -1,8 +1,3 @@
-#include <Application.h>
-#include <Window.h>
-#include <View.h>
-#include <Button.h>
-#include <TextControl.h>
 
 #include <Application.h>
 #include <Window.h>
@@ -128,7 +123,7 @@ isPlaying(false) {
     fpsSlider->SetHashMarkCount(10);
     fpsSlider->SetTarget(this);
 
-    statusLabel = new BStringView("status", "Enter a path to the folder, frames must be numbered like 1.pmg, 2.png, 3.png. etc etc.");
+    statusLabel = new BStringView("status", "Enter a path to the folder, frames must be numbered like 1.png, 2.png, 3.png. etc etc.");
 
     BLayoutBuilder::Group<>(this, B_VERTICAL, 10)
     .SetInsets(10)
